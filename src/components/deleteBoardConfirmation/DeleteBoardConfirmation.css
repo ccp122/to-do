@@ -1,0 +1,53 @@
+.board-confirmation-box-wrapper {
+    max-width: 500px;
+    padding: 24px 20px;
+    box-sizing: border-box;
+
+    h1 {
+        font-family: system-ui, -apple-system, sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 0 16px 0;
+        color: var(--mainCol);
+        text-align: center;
+    } 
+
+    .delete-actions {
+        display: flex;
+        gap: 12px;
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+
+        > button {
+            flex: 1;
+            height: 36px;
+            background-color: var(--errorCol);
+            color: var(--whiteCol);
+            border: none;
+            padding: 0 16px;
+            border-radius: 6px;
+            font-family: system-ui, -apple-system, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s ease, transform 0.1s ease;
+
+            &:hover {
+                background-color: var(--errorLightCol);
+            }
+
+            &:active {
+                transform: scale(0.97);
+            }
+
+            &:nth-of-type(2) {
+                background-color: var(--grayCol);
+
+                &:hover {
+                    background-color: var(--secondary2);
+                }
+            }
+        }
+    }
+}

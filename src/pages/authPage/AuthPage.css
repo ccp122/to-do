@@ -1,0 +1,187 @@
+.auth-section-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: radial-gradient(circle at 20% 30%, var(--secondary1) 0%, var(--bgr2) 60%, var(--secondary2) 100%);
+    background-size: 200% 200%;
+    background-position: 100% 100%;
+
+
+    .auth-hero-section {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: -50px;
+        margin-bottom: 50px;
+
+        > h1 {
+            font-family: var(--font-title), sans-serif;
+            font-size: 3.5rem; 
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.03em;
+            color: var(--mainColLighter);
+            margin: 0;
+            width: 101%;
+        }
+        
+        > .auth-hero-title-devider {
+            margin-top: 2px;
+            height: 2px;
+            width: 100%;
+            background-color: var(--mainCol);
+            margin-bottom: 10px;
+            animation: hero_title_devider 0.6s ease-in 0s 1;
+        }
+
+        > h2 {
+            margin-top: 1rem;
+            width: 90%;
+            font-family: var(--font-subtitle), sans-serif;
+            font-size: 1.35rem;
+            letter-spacing: 0.3px; 
+            font-weight: 400;
+            line-height: 1.5;
+            color: var(--text1);
+        }
+
+        > p {
+            margin-top: 4.4rem;
+            font-family: var(--font-body), sans-serif;
+            font-size: 0.875rem;
+            color: var(--text2);
+            letter-spacing: 0.2px;
+        }
+
+        .auth-hero-features {
+            display: flex;
+            gap: 10px;
+            margin-top: 0.75rem;
+
+            .feature-pill {
+                font-size: 0.8rem;
+                font-weight: 500;
+                color: var(--text1);
+                background: var(--bgr1);
+                padding: 8px 14px;
+                border-radius: 8px;
+                border: 1px solid var(--third1);
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+                transition: 0.2s;
+                user-select: none;
+                font-family: sans-serif;
+            }
+
+            .feature-pill:hover {
+                background-color: var(--mainCol);
+                border: 1px solid var(--border1);
+                color: var(--whiteCol);
+            }
+        }
+
+        .auth-hero-card {
+            width: 100%;
+            max-width: 600px;
+            height: 200px;
+            margin-top: 1rem;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--secondary1);
+            border-radius: 12px;
+            padding: 16px;
+            box-sizing: border-box;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            flex-direction: column;
+            gap: 8px;
+
+            .card-dot-wrapper {
+                display: flex;
+                gap: 6px;
+                margin-bottom: 10px;
+            
+                .card-dot {
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                    background: var(--third1);
+                    margin-bottom: 0px;
+
+                    &.red { animation: first_dot_animation 3s steps(1) infinite }
+                    &.yellow { animation: second_dot_animation 3s steps(1) infinite }
+                    &.green { animation: third_dot_animation 3s steps(1) infinite }
+                }
+            }
+
+            .card-preview-line {
+                height: 8px;
+                border-radius: 4px;
+                background: var(--secondary1);
+                margin-bottom: 2px;
+
+                &.first_1 { animation: first_preview_line_animation 4s linear 0s infinite alternate; }
+                &.first_2 { animation: first_preview_line_animation 4s linear 1s infinite alternate; }
+                &.second_1 { animation: second_preview_line_animation 5s linear 0s infinite alternate; }
+                &.second_2 { animation: second_preview_line_animation 5s linear 1s infinite alternate; }
+                &.second_3 { animation: second_preview_line_animation 5s linear 2s infinite alternate; }
+                &.third { animation: third_preview_line_animation 3s linear 0s infinite alternate; }
+                &.fourth_1 { animation: fourth_preview_line_animation 2s linear 0s infinite alternate;}
+                &.fourth_2 { animation: fourth_preview_line_animation 2s linear 1s infinite alternate;}
+            }
+        }
+    }
+}
+
+@keyframes hero_title_devider {
+    0% { width: 85%; }
+    100% { width: 100%; }
+}
+
+@keyframes first_dot_animation {
+    0% { background: #ff5f56; }
+    33.33% { background: #ffbd2e; }
+    66.66% { background: #27c93f; }
+}
+
+@keyframes second_dot_animation {
+    0% { background: #27c93f; }
+    33.33% { background: #ff5f56; }
+    66.66% { background: #ffbd2e; }
+}
+
+@keyframes third_dot_animation {
+    0% { background: #ffbd2e; }
+    33.33% { background: #27c93f; }
+    66.66% { background: #ff5f56; }
+}
+
+@keyframes first_preview_line_animation {
+    0% { width: 100%; }
+    60% { width: 85%; }
+    100% { width: 80%; }
+}
+
+@keyframes second_preview_line_animation {
+    0% { width: 80%; }
+    60% { width: 65%; }
+    100% { width: 60%; }
+}
+
+@keyframes third_preview_line_animation {
+    0% { width: 60%; }
+    60% { width: 45%; }
+    100% { width: 40%; }
+}
+
+@keyframes fourth_preview_line_animation {
+    0% { width: 40%; }
+    60% { width: 25%; }
+    100% { width: 20%; }
+}

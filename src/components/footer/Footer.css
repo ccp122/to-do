@@ -1,0 +1,6 @@
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: var(--secondary1);
+    border-top: 2px solid var(--mainCol);
+}

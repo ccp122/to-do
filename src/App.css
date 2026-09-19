@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.none-user-select {
+    user-select: none !important;
+    -webkit-user-drag: none !important;
+    pointer-events: none !important;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

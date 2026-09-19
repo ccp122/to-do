@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    /* Bell Body Animation */
+    .bell-body {
+      transform-origin: 12px 3px;
+      animation: swingBell 0.8s ease-in-out forwards;
+    }
+
+    /* Ball/Clapper Following Animation */
+    .bell-ball {
+      transform-origin: 12px 17.8px;
+      animation: followBall 0.8s ease-in-out forwards;
+    }
+
+    /* Bell Body: Right -> Left -> Rest */
+    @keyframes swingBell {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(10deg); }
+      60% { transform: rotate(-7deg); }
+      82% { transform: rotate(3deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    /* Ball: Trailing motion following the bell */
+    @keyframes followBall {
+      0% { transform: rotate(0deg); }
+      12% { transform: rotate(0deg); }
+      35% { transform: rotate(14deg); }
+      70% { transform: rotate(-10deg); }
+      90% { transform: rotate(4deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+
+  <!-- Bell Body (Closed Shape) -->
+  <path class="bell-body" id="bell-body" 
+        d="M9.00195 17H5.60636C4.34793 17 3.71872 17 3.58633 16.9023C3.4376 16.7925 3.40126 16.7277 3.38515 16.5436C3.37082 16.3797 3.75646 15.7486 4.52776 14.4866C5.32411 13.1835 6.00031 11.2862 6.00031 8.6C6.00031 7.11479 6.63245 5.69041 7.75766 4.6402C8.88288 3.59 10.409 3 12.0003 3C13.5916 3 15.1177 3.59 16.2429 4.6402C17.3682 5.69041 18.0003 7.11479 18.0003 8.6C18.0003 11.2862 18.6765 13.1835 19.4729 14.4866C20.2441 15.7486 20.6298 16.3797 20.6155 16.5436C20.5994 16.7277 20.563 16.7925 20.4143 16.9023C20.2819 17 19.6527 17 18.3943 17H9.00195Z" 
+        stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        
+  <!-- Closed Half-Circle Ball / Clapper (Shifted up to Y=17.8, stroke-width=1.5) -->
+  <path class="bell-ball" id="bell-ball" 
+        d="M9 17.8H15V18.3C15 20.233 13.6569 21.8 12 21.8C10.3431 21.8 9 20.233 9 18.3V17.8Z" 
+        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="282.83 88.29 145.756 105.299" width="145.756px" height="105.299px">
+  <defs>
+    <linearGradient id="checkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0" stop-color="#10B981"/>
+      <stop offset="1" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 282.38720703125, 87.8641586303711)">
+    <circle cx="12" cy="12" r="11" fill="url(#checkGrad)"/>
+    <path d="M8 12.5L10.5 15L16 9.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="36" y="8.46" width="87.829" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" style=""/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 282.3875732421875, 129.86431884765625)">
+    <circle cx="12" cy="12" r="11" fill="url(#checkGrad)"/>
+    <path d="M8 12.5L10.5 15L16 9.5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <rect x="36" y="8.46" width="109.767" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" style=""/>
+  </g>
+  <g transform="matrix(1, 0, 0, 1, 282.3875732421875, 172.39236450195312)">
+    <rect x="36.44" y="5.923" width="73.429" height="7" rx="3.5" fill="#94A3B8" opacity="0.7" style="stroke-width: 1;"/>
+    <circle cx="12" cy="9.602" r="10" stroke="#CBD5E1" stroke-width="2" style="fill: none;"/>
+  </g>
+</svg>

@@ -1,0 +1,118 @@
+.main-header  {
+    width: 100%;
+    background-color: var(--third1);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--mainCol);
+}
+
+.header-naming-wrapper {
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 8px 10px;
+    border-radius: 6px;
+    gap: 10px;
+    cursor: pointer;
+
+    > img {
+        height: 20px;
+    }
+
+    > h1 {
+        font-size: 18px;
+        font-family: sans-serif;
+        font-weight: 200;
+        letter-spacing: 2px;
+        word-spacing: -3px;
+    }
+}
+
+.user-side-wrapper {
+    display: flex;
+    margin-right: 1%;
+    gap: 15px;
+}
+
+.header-naming-wrapper:hover {
+    background-color: var(--secondary1);
+}
+
+.user-interactives {
+    width: fit-content;
+    height: fit-content;
+    padding: 6px 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+
+    > svg {
+        transition: 0.2s;
+    }
+}
+
+.user-user-profile-signed-in {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 50%;
+    cursor: pointer;
+    min-width: 28px;
+    min-height: 28px;
+    font-family: sans-serif;
+}
+
+.user-interactives:hover {
+    background-color: var(--secondary1);
+}
+
+.header-notifications-wrapper {
+    padding: 5px 5px !important;
+
+    > svg {
+        color: var(--svg);
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.header-settings-wrapper {
+
+    > svg {
+        color: var(--svg);
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.user-user-profile {
+    padding: 2px 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    > svg {
+        color: var(--svg);
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.header-settings-wrapper:hover {
+
+    > svg {
+        transform: rotate(45deg);
+    }
+}
